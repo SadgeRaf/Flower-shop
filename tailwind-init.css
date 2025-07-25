@@ -147,6 +147,10 @@ body{
     border: none;
 }
 
+.sale-button:hover{
+    cursor: pointer;
+}
+
 .Flower-section{
     display: flex;
     flex-direction: row-reverse;
@@ -366,6 +370,11 @@ body{
 }
 
 @media screen and (max-width: 768px) {
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    
     .nav-bar{
         display: flex;
         align-items: center;
@@ -379,11 +388,22 @@ body{
 
     .icon, .home{
         display: none;
+    
+    }
+
+    .icon-container{
+        padding: 0%;
+    }
+
+    .cart-icon{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-right: 10px;
     }
 
     .cart{
-        margin-right: 20px;
-        margin-top: 50px;
+        
     }
 
     .Title, .Orange{
@@ -445,14 +465,16 @@ body{
         display: flex;
         flex-direction: column-reverse;
         margin: 20px;
-
-
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 50px;
     }    
     
     .flower-text{
+        text-align: left;
         width: 100%;
         margin: 0%;
-        padding-left: 0%;
+        padding-left: 10px;
         padding-right: 0%;
     }
 
@@ -460,7 +482,7 @@ body{
       font-size: 1.5rem;
       white-space: nowrap;
       margin: 0%;
-      
+      text-align: left;
     }
     
     .Flower-list{
@@ -480,7 +502,7 @@ body{
     .latest-img-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin: 0%;
+        margin: 10px;
     }
     
     .img-text-zabo{
@@ -493,6 +515,10 @@ body{
         top: 530px;
         left: 140px;
         font-size: 1rem;
+    }
+
+    .latest{
+        margin-top: 100px;
     }
 
     .latest-img{
