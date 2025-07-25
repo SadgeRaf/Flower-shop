@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tailwind-init.css">
+    
     <title>Flower shop</title>
 </head>
 <body>
     <header class="header">
       <nav class="nav-bar">
         <div class="logo">
-          <img src="/assets/logo.png" alt="Website Logo">
+          <img class="logo" src="/assets/logo.png" alt="Website Logo">
         </div>
         <ul class="icon-container">
           <li class=""><a class="home" href="">Home</a></li>
@@ -85,7 +86,7 @@
        </div>
        <section class="Flower-section">
         <div class="flower-text">
-            <h1 class="Title Flower-title">Flower & Plants Lover</h1>
+            <h1 class="Flower-title">Flower & Plants Lover</h1>
             <ul class="Flower-list">
               <li class="Flower-text">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
               <li class="Flower-text">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -98,12 +99,33 @@
         </div>
        </section>
        <section class="latest">
-          <div class="latest-text">
-            <h1><span>Latest</span> Deals</h1>
+          <div class="latest-inside">
+            <h1 class="Title"><span class="Orange">Latest</span> Deals</h1>
+            <p class="latest-text">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+          </div>
+          <div class="latest-img-container">
+           <div class="left-img"> 
+            <img class="latest-img" src="/assets/deal-bloom.png">
+            <h2 class="img-text-bloom">60% Off | Bloom Plant</h2>
+            <P class="img-text-bloom-underline">Shop Now</P>
+            
+            <img class="latest-img" src="/assets/deal-ana.png">
+            <h2 class="img-text-ana">30% Off | Ana Plant</h2>
+            <P class="img-text-ana-underline">Shop Now</P>
+
+           </div> 
+            <img class="latest-img" src="/assets/deal-zabo.png">
+            <h2 class="img-text-zabo">25% Off | Zabo Plant</h2>
+            <P class="img-text-zabo-underline">Shop Now</P>
           </div>
        </section>
+       
        <section class="search">
-        
+         <h1 class="search-title">Join the colorful Bunch</h1>
+        <div class="input"> 
+         <input type="email" placeholder="Write email">
+         <button type="submit">Subscribe</button>
+        </div> 
        </section>
     </main>
     <footer>

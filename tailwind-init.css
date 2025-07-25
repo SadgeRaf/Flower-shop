@@ -1,9 +1,16 @@
 /*@import "Tailwind"*/
+.header{
+
+}
 
 .nav-bar{
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+}
+
+.logo{
+
 }
 
 .icon-container{
@@ -126,7 +133,8 @@
 }
 
 .Flower-title{
-    font-size: 60px;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 .flower-list{
@@ -139,16 +147,157 @@
     font-size: 20px;
 }
 
+.img{
+   position: relative;
+   display: inline-block;
+}
+
 .Flower-image{
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 .Badge{
-    width: 286px;
-    position: relative;
-    margin-bottom: 500px;
+    position: absolute;
+    left: 350px;
+    top: -120px;
+    width: 300px;
 }
 
+.latest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.latest-inside{
+    text-align: center;
+}
+
+.latest-text{
+    text-align: center;
+    max-width: 788px;
+    padding: 0 0 50px 0;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+
+.latest-img-container{
+    display: grid;
+    grid-template-columns: 380px 380px auto;
+    position: relative;
+    gap: 20px;
+    align-items: center;
+    margin-right: 350px;
+}
+
+.left-img{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+}
+
+
+.img-text-bloom{
+    position: absolute;
+    color: white;
+    top: 60px;
+    left: 70px;
+}
+
+.img-text-bloom-underline{
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 150px;
+    text-decoration: underline;
+}
+
+.img-text-ana{
+    position: absolute;
+    color: white;
+    top: 255px;
+    left: 75px;
+}
+
+.img-text-ana-underline{
+    position: absolute;
+    color: white;
+    top: 300px;
+    left: 140px;
+    text-decoration: underline;
+}
+
+.img-text-zabo{
+    position: absolute;
+    color: white;
+    top: 120px;
+    left: 570px;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.img-text-zabo-underline{
+    position: absolute;
+    color: white;
+    top: 200px;
+    left: 700px;
+    text-decoration: underline;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.latest-img{
+    border-radius: 5%;
+    filter: brightness(80%);
+    
+}
+
+.search{
+    background-image: url(/assets/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0 120px 0;
+}
+
+.search-title{
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 200px 0 50px 0;
+}
+
+.input{
+    margin: 0 0 200px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input input{
+    width: 644px;
+    height: 50px;
+}
+
+.input input::placeholder{
+     padding-left: 20px;
+}
+
+.input button{
+    height: 54px;
+    margin: 0;
+    background-color: rgba(233, 90, 8, 1);
+    color: white;
+    border: none;
+    width: 186px;
+    font-size: 1.1rem;
+}
 
 @media screen and (max-width: 768px) {
     .nav-bar{
@@ -157,16 +306,21 @@
     }
     
     .logo{
-        width: 60%;
-
+        width: 50%;
+        margin-left: 10px;
     }
 
     .icon, .home{
         display: none;
     }
 
-    .Title{
-        font-size: 40px;
+    .cart{
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+
+    .Title, .Orange{
+        font-size: 2.5rem;
     }
 
     .Banner-inside{
@@ -184,6 +338,7 @@
 
     .banner-image{
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .main{
@@ -200,8 +355,7 @@
         flex-direction: column;
         justify-content: center;
         max-width: 363px;
-        padding: ;
-        margin: ;
+
         text-align: center;
     }
     
@@ -215,38 +369,63 @@
         width: 100%;
     }
     
-    .Flower-section{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin: 20px;
-    }    
-    
     .Badge{
         display: none;
     }
 
-    .flower-text{
+    .Flower-section{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
-        margin-top: 20px;
-        margin: auto;
+        flex-direction: column-reverse;
+
+
+
+    }    
+    
+    .flower-text{
+        
     }
 
     .Flower-title{
-      font-size: 40px;
-      padding: auto;
+      font-size: 2rem;
+      white-space: nowrap;
+      margin: 0%;
+      
     }
     
     .Flower-list{
       padding: 0px;
-      margin: 10px;
+      margin: 10px 0px;
+      width: 100%;
     }
 
     .Flower-text{
-        font-size: 15px;
+        font-size: 1rem;
     }
+
+    .latest-text{
+        
+    }
+
+    .latest-img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0%;
+    }
+    
+    .img-text-zabo{
+        top: 500px;
+        left: 100px;
+        font-size: 1.2rem;
+    }
+
+    .img-text-zabo-underline{
+        top: 530px;
+        left: 140px;
+        font-size: 1.2rem;
+    }
+
+    .latest-img{
+        width: 100%;
+    }
+   
 }
