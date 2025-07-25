@@ -5,6 +5,7 @@
 
 .nav-bar{
   display: flex;
+  align-items: center;
   justify-content: space-around;
   margin-top: 20px;
 }
@@ -163,6 +164,7 @@
     left: 350px;
     top: -120px;
     width: 300px;
+    animation: 3s linear 0s infinite badge-rotate;
 }
 
 .latest{
@@ -264,7 +266,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 120px 0 120px 0;
+    margin: 120px 0 30px 0;
 }
 
 .search-title{
@@ -297,6 +299,42 @@
     border: none;
     width: 186px;
     font-size: 1.1rem;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.left-side{
+
+}
+
+.footer-text{
+    font-size: 1.2rem;
+    width: 359px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.middle-side{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    row-gap: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.right-side{
+    
+}
+
+.footer-img{
+   padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -376,13 +414,16 @@
     .Flower-section{
         display: flex;
         flex-direction: column-reverse;
-
+        margin: 20px;
 
 
     }    
     
     .flower-text{
-        
+        width: 100%;
+        margin: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
     .Flower-title{
@@ -427,5 +468,44 @@
     .latest-img{
         width: 100%;
     }
-   
+
+    .search{
+        background-size: cover;
+        margin: 40px 0 40px 0;
+    }
+
+    .search-title{
+        font-size: 1.5rem;
+        margin: 70px 0 20px 0;
+    }
+
+    .input{
+        margin:0 0 50px 0 ;
+    }
+
+    .input input{
+        width: 200px;
+    }
+
+    .input button{
+        width: 100px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+
+    .middle-side{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 0 20px 0;
+    }
+
+}  
+
+@keyframes badge-rotate{
+    100%{transform: rotateZ(360deg)}
 }
